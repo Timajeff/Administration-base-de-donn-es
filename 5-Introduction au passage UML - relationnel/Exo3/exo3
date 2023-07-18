@@ -1,0 +1,7 @@
+CREATE TABLE racers (
+  number INT(2) NOT NULL PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  brand VARCHAR(50) NOT NULL,
+  max_Speed INT(4) NOT NULL
+);

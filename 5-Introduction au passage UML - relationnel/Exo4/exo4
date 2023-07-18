@@ -1,0 +1,18 @@
+CREATE TABLE clients (
+  id INT(11) NOT NULL AUTO_INCREMENT KEY PRIMARY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL
+); 
+
+CREATE TABLE animals (
+  id INT(11) NOT NULL AUTO_INCREMENT KEY PRIMARY,
+  name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE owns (
+  client_id INT(11) NOT NULL,
+  animal_id INT(11) NOT NULL,
+  PRIMARY KEY (client_id, animal_id), 
+  FOREIGN KEY (client_id) REFERENCES client(id),
+  FOREIGN KEY (animal_id) REFERENCES animal(id)
+);

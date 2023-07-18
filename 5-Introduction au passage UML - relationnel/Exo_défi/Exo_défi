@@ -1,0 +1,45 @@
+CREATE TABLE countries (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  color VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE events (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE hotel_rooms (
+  number INT(3) NOT NULL PRIMARY KEY,
+  floor INT(2) NOT NULL
+);
+
+CREATE TABLE athletes (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  country_id INT(11) NOT NULL,
+  FOREIGN KEY (country_id) REFERENCES countries(id),
+  hotel_room_id INT(11) NOT NULL,
+  FOREIGN KEY (hotel_room_id) REFERENCES hotel_rooms id),
+);
+
+CREATE TABLE judokas (
+  athletes_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  weight DECIMAL(3,2) NOT NULL,
+  FOREIGN KEY (athlete_id) REFERENCES athletes(id)
+);
+
+CREATE TABLE sailors (
+  athletes_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  boat_Type VARCHAR(50) NOT NULL,
+  FOREIGN KEY (athlete_id) REFERENCES athletes(id)
+);
+
+CREATE TABLE participants (
+  event_id INT(11) NOT NULL,
+  athletes_id INT(11) NOT NULL,
+  PRIMARY KEY (event_id, athlete_id),
+  FOREIGN KEY (event_id) REFERENCES events(id),
+  FOREIGN KEY (athlete_id) REFERENCES athletes(id)
+);

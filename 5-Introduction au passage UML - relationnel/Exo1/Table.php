@@ -1,0 +1,5 @@
+<?php
+
+CREATE TABLE posts (
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+);

@@ -1,0 +1,14 @@
+CREATE TABLE artists(
+  id INT(11) NOT NULL AUTO_INCREMENT KEY PRIMARY,
+  first_name VARCHAR(50) NOT NULL,
+  last_name VARCHAR(50) NOT NULL,
+  birth_date VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE paintings(
+  id INT(11) NOT NULL AUTO_INCREMENT KEY PRIMARY,
+  title VARCHAR(50) NOT NULL,
+  completion_date DATETIME NOT NULL,
+  is_painted_by INT(11) NOT NULL,
+  FOREIGN KEY(is_painted_by) REFERENCES artists(id)
+);

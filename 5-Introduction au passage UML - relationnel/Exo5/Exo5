@@ -1,0 +1,24 @@
+CREATE TABLE characters(
+  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  healthPoints INT(11) NOT NULL,
+);
+
+CREATE TABLE magicals(
+  characters_id INT(11) NOT NULL PRIMARY KEY,
+  manaPoints INT(11) NOT NULL,
+  FOREIGN KEY (characters_id) REFERENCES characters (id)
+);
+
+CREATE TABLE Barbarians(
+  characters_id INT(11) NOT NULL PRIMARY KEY,
+  furyMultiplier DECIMAL(4,2) NOT NULL,
+  FOREIGN KEY (characters_id) REFERENCES characters (id)
+);
+
+CREATE TABLE Summoners(
+  characters_id INT(11) NOT NULL PRIMARY KEY,
+  petName VARCHAR(50) NOT NULL,
+  petHealth INT(11) NOT NULL,
+  FOREIGN KEY (characters_id) REFERENCES characters (id)
+);
