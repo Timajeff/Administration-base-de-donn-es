@@ -1,0 +1,7 @@
+L'analyse du problème permet de mettre en évidence les points suivants :
+
+Les données sont fortement structurées puisque tous les champs sont obligatoires : nous n'avons donc pas besoin de la flexibilité offerte par un SGBD orienté document.
+
+Le volume de données restera probablement faible, puisqu'il s'agit d'une petite entreprise régionale : il ne sera donc pas possible de profiter des avantages d'un SGBD orienté colonne.
+
+Un SGBD relationnel est probablement le plus adapté.

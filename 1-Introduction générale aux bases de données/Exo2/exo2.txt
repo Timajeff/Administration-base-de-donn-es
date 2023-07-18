@@ -1,0 +1,5 @@
+On peut constater que le fichier .csv est beaucoup plus petit. 
+De plus, en essayant d'ouvrir le fichier .db avec un éditeur, on constate la présence de nombreux caractères non alphabétiques.
+
+La base de données ne contient pas seulement les données, mais beaucoup d'autres informations utiles au SGBD, 
+qui ne peuvent pas être affichées telles quelles.

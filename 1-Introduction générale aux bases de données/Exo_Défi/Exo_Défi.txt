@@ -1,0 +1,30 @@
+Permier Question :
+
+1.Pour gérer un grand volume de données (grande quantité de visiteurs), les SGBD colonnes sont les plus performants.
+
+2.Pour la fiabilité et la rigueur de la structure, les SGBD relationnels sont les plus indiqués
+
+3.Pour une partie plus libre, où l'on ne sait pas à l'avance ce que vont mettre les utilisateurs, 
+la flexibilité des SGBD documents est un avantage.
+
+4.Les SGBD graphes sont les plus adaptés pour analyser les relations entre les données, 
+et donc pour pouvoir faire le lien entre les achats de deux articles.
+
+Deuxième Question :
+
+Ce problème est très courant en informatique. Les besoins exprimés sont très différents, 
+mais il n'est pas forcément possible d'utiliser des outils différents pour résoudre chacun de ces besoins. 
+Le choix le plus fréquent dans ce cas est le SGBD relationnel. En effet :
+
+Le besoin de fiabilité et de structure forte pour l'aspect « facture » est primordial, car il s'agit ici d'un aspect légal. 
+L'entreprise prendrait un gros risque à ne pas pouvoir respecter cette contrainte.
+
+Un SGBD relationnel n'est pas le plus rapide des SGBD, mais il reste quand même un outil performant malgré tout.
+
+L'aspect « facile d'emploi » de l'espace client dépend principalement de l'ergonomie du site, plus que du choix du SGBD. 
+Ce sera peut être un peu plus complexe à programmer, mais pas plus complexe à l'utilisation.
+
+L'aspect « analyse » peut être complexe et plus lent à établir avec un SGBD qui n'est pas un graphe,
+ mais reste possible à faire avec un SGBD relationnel. De plus,
+ ces analyses sont un besoin interne de l'entreprise et n'ont aucun impact sur la vitesse d'affichage du site pour les utilisateurs :
+ un amoindrissement des performances n'est donc pas très important.
