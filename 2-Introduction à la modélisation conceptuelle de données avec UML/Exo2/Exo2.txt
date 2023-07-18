@@ -1,0 +1,16 @@
+C'est un diagramme d'activité. On le reconnaît notamment à son nœud initial et ses nœuds de fin d'activité.
+
+Si le client essaye d'acheter exactement la quantité demandée en stock, alors on passe dans la condition [stock >= quantité]. 
+La prochaine étape est donc de demander à l'utilisateur son numéro de carte bleue.
+
+Un message d'erreur apparaît si :
+
+L'utilisateur choisit une quantité de produits invalide (0 ou un nombre négatif)
+
+Si le produit n'est pas en stock
+
+Si le numéro de sa carte bleue n'est pas valide
+
+Si sa carte a expiré
+
+Si la transaction bancaire a échoué

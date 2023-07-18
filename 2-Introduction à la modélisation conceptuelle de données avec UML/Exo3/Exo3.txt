@@ -1,0 +1,27 @@
+<?php 
+
+class Album 
+{
+    private int $id;
+    private string $title;
+    private int $musicsNumber;
+    private DateTime $releaseDate;
+    
+    public function __construct(int $id, string $title, int $musicsNumber, DateTime $releaseDate)
+    {
+        $this->id = $id;
+        $this->title = $title;
+        $this->musicsNumber = $musicsNumber;
+        $this->releaseDate = $releaseDate;
+    }
+    
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+    
+    public function release(DateTime $date): void
+    {
+        $this->releaseDate = $date;
+    }
+}

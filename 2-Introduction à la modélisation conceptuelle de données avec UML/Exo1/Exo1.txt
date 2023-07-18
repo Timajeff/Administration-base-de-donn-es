@@ -1,0 +1,7 @@
+Il y a deux types d'utilisateurs sur l'application : les vendeurs (Seller) et les acheteurs (Customer). 
+Les vendeurs peuvent vendre des produits et les acheteurs peuvent les acheter. 
+On remarque que, pour pouvoir réaliser leurs actions respectives, les deux doivent se connecter (login).
+
+Bien entendu, un vrai diagramme de cas d'utilisation sera certainement plus complexe et inclura l'inscription des utilisateurs
+, la gestion des stocks (avec leur mise à jour selon les actions de chacun), 
+le traitement des erreurs et toutes les autres fonctionnalités de notre application.
